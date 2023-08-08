@@ -38,9 +38,6 @@ $latestShadowCopies = @()
 $currentDriveLetter = $null
 $currentCreationTime = $null
 
-# Specify the maximum allowed hours since the last shadow copy before alerting
-$hoursSinceLastShadowCopy = 24
-
 # Check for PowerShell v5+
 if ($PSVersionTable.PSVersion.Major -lt 5) {
     Write-Host "This script requires PowerShell version 5 or higher"
